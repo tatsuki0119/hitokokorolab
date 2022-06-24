@@ -197,6 +197,7 @@ span.b {
 
 #service #service-box .contents .desc p {
   font-size: 20px;
+  margin-right: 2px;
 }
 
 #service #service-box .contents .desc img {
@@ -591,6 +592,17 @@ form p #submit-btn:hover {
     width: 80%;
     height: auto;
     margin-bottom: 50px;
+  }
+
+  #service #service-box .contents .desc {
+    flex-direction: column-reverse;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  #service #service-box .contents .desc p {
+    margin-top: 16px;
+    margin-right: 0px;
   }
 
   /* greeting */
