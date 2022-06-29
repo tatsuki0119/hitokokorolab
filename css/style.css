@@ -292,6 +292,12 @@ form textarea {
   border: black 1px solid;
 }
 
+/* form select {
+  border: black 1px solid;
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+} */
+
 form table {
   border-collapse: collapse;
 }
