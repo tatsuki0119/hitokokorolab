@@ -1,7 +1,12 @@
 /* common */
 
-body {
+/* body {
   font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic',sans-serif;
+} */
+
+* {
+  font-family: 'BIZ UDPGothic', sans-serif;
+  line-height: 1.5;
 }
 
 section {
@@ -42,6 +47,12 @@ span.b {
   color:#e8516d;
 }
 
+span.red-border {
+  border-bottom: red 1px solid;
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .title {
   text-align: center;
   padding-top: 110px;
@@ -76,6 +87,7 @@ span.b {
 
 #header #logo img {
   height: 100px;
+  width: 350px;
 }
 
 #header #pc-menu nav {
@@ -92,8 +104,8 @@ span.b {
 }
 
 #header #pc-menu ul li {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
   color: #fff;
   border-bottom: 2px solid #fff;
 }
@@ -114,7 +126,8 @@ span.b {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     width: 100%;
-    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','ＭＳ Ｐ明朝','MS PMincho',sans-serif;
+    /* font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','ＭＳ Ｐ明朝','MS PMincho',sans-serif; */
+    font-family: 'BIZ UDPGothic', sans-serif;
 }
 
 .top-title h1 {
@@ -303,6 +316,40 @@ span.hito {
   text-align: right;
 }
 
+/* books */
+
+#books {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.books-item {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.books-item .books-img img {
+  width: 300px;
+}
+
+.books-item .books-desc {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.books-item .books-desc h2 {
+  margin-bottom: 40px;
+}
+
+.books-item .books-desc .link-img {
+  display: flex;
+  margin-top: 80px;
+}
+
+.books-item .books-desc .link-img img {
+  width: 200px;
+}
+
 /* company */
 
 #company {
@@ -329,6 +376,38 @@ span.hito {
   padding: 10px;
   text-align: left;
   width: 82%;
+}
+
+/* link */
+
+#link {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#link h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.link-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.link-item img,
+.link-item {
+  width: 300px;
+}
+
+.link-item img {
+  height: 70px;
+}
+
+.link-item p {
+  margin-top: 8px;
 }
 
 /* contact */
@@ -386,12 +465,28 @@ form p #submit-btn {
   border: none;
   padding: 16px 24px 16px 24px;
   margin-top: 40px;
-  background: #dcdcdc;
+  background: #f18101;
+  color: #fff;
   width: 200px;
 } 
 
 form p #submit-btn:hover {
   opacity: 0.7;
+}
+
+/* return-top */
+
+#return-top {
+  margin: 0 auto;
+}
+
+#return-top p {
+  text-align: center;
+}
+
+#return-top,
+#return-top img {
+  width: 200px;
 }
 
 /* footer */
@@ -697,6 +792,31 @@ form p #submit-btn:hover {
     text-align: center;
   }
 
+  /* books */
+
+  .books-item {
+    display: block;
+  }
+  
+  .books-item .books-img {
+    text-align: center;
+  }
+  
+  .books-item .books-desc h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .books-item .books-desc .link-img {
+    display: flex;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .books-item .books-desc .link-img img {
+    width: 150px;
+  }
+
   /* company */
   #company {
     margin-right: 8px;
@@ -710,6 +830,37 @@ form p #submit-btn:hover {
   #company table td {
     width: 70%;
   }
+
+  /* link */
+
+#link h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.link-item-wrapper {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.link-item img,
+.link-item {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.link-item img {
+  height: 70px;
+}
+
+.link-item {
+  margin-bottom: 40px;
+}
+
+.link-item p {
+  margin-top: 8px;
+}
 
   /* contact */
   #contact {
