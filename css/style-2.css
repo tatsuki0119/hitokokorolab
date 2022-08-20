@@ -122,7 +122,11 @@ select {
 /* top */
 
 .top-title {
-  color: #fff;
+  color: gray;
+  text-shadow:1px 1px 0 #fff, -1px -1px 0 #fff,
+  -1px 1px 0 #fff, 1px -1px 0 #fff,
+  0px 1px 0 #fff,  0 -1px 0 #fff,
+  -1px 0 0 #fff, 1px 0 0 #fff;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -131,7 +135,6 @@ select {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     width: 100%;
-    /* font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','ＭＳ Ｐ明朝','MS PMincho',sans-serif; */
     font-family: 'BIZ UDPGothic', sans-serif;
 }
 
@@ -139,37 +142,9 @@ select {
   font-size: 100px
 }
 
-span.kokoro {
-  color: #e8516d;
-}
-
-span.hito {
-  background: -moz-radial-gradient(#fffc00 5%, #f18101 95%); 
-  background: -webkit-radial-gradient(#fffc00 5%, #f18101 95%); 
-  background: radial-gradient(#fffc00 5%, #f18101 95%); ;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .top-title p {
   font-size: 30px;
   font-weight: bold;
-}
-
-.top-title p:first-child {
-  color: gray;
-  /* text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
-  -1px 1px 0 #FFF, 1px -1px 0 #FFF,
-  0px 1px 0 #FFF,  0-1px 0 #FFF,
-  -1px 0 0 #FFF, 1px 0 0 #FFF; */
-}
-
-.top-title p:last-child {
-  background: -moz-radial-gradient(#ffcc00 5%, #f18101 95%); 
-  background: -webkit-radial-gradient(#ffcc00 5%, #f18101 95%); 
-  background: radial-gradient(#ffcc00 5%, #f18101 95%); ;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #top img {
